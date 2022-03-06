@@ -1,0 +1,17 @@
+package com.Prepjava;
+// starting class to write program within
+public class Main {
+    //function main to write code
+    public static void main(String[] args) {
+	// write your code here
+        System.out.println("Hello World");
+        String name="Jasleen";
+        //charat to get one charcter from string
+        System.out.println(name.charAt(0));
+        //replace to first the charcter and then the charcter to use instead
+        String name2 = name.replace("e","i");
+        // substring to get the mid word out of long string first the starting index then ending index+1 positon no
+        System.out.println(name.substring(0,3));
+
+    }
+}
