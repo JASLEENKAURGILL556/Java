@@ -1,4 +1,5 @@
 package com.Prepjava;
+import java.util.Arrays;
 // starting class to write program within
 public class Main {
     //function main to write code
@@ -17,6 +18,10 @@ public class Main {
         System.out.println(marks[0]+" "+marks[1]+" "+marks[2]);
         //arrayname.length here length is one of builtin properties of array in java
         System.out.println("Total students in class: "+rollno.length);
+        //sort is function from array class of java
+        Arrays.sort(marks);
+        System.out.println("Sorted marks list");
+        System.out.println(marks[0]+" "+marks[1]+" "+marks[2]);
 
     }
 }
