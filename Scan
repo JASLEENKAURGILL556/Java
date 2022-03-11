@@ -1,0 +1,18 @@
+package.com.prepjava//folder name
+import java.util.Scanner//package to import to use Scanner function
+public class Main(){
+   public static void main(){
+   Scanner sc=new.Scanner(System.in);
+   int t=sc.nextInt();
+   float f=sc.nextFloat();
+   long l=sc.nextLong();
+   sc.nextLine();
+   String s=sc.nextLine();
+   //to get one word in
+   String sone=sc.next();
+   System.out.println(t);
+   //to print and jump in next line use println
+   System.out.print();
+   //to print and remain curser in same line use print
+   }
+   }
