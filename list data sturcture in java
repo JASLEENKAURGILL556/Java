@@ -1,0 +1,29 @@
+package com.Prepjava;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+// starting class to write program within
+public class Main {
+    //function main to write code
+    public static void main(String[] args) {
+   
+       ArrayList<String> friend= new ArrayList<String>();
+       //<String> defines the data type of list
+       friend.add("Oscar");
+       friend.add("Angela");
+       friend.add("Kevin");
+         
+        //toString fun to show whole list of data 
+        System.out.println(friend.toString());
+        //get fun to get particular element of list
+        System.out.println(friend.get(0));
+        //remove fun to remove element from list
+        friend.remove("Oscar");
+        System.out.println(friend.get(0));
+        //contain fun to check whether this element exist in list
+        System.out.println(friend.contains("Angela"));
+        // size fun to know the length of list
+        System.out.println(friend.size());
+
+    }
+}
