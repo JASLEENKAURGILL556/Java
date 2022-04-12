@@ -1,0 +1,44 @@
+package com.Prepjava;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+// starting class to write program within
+//class name Book
+class Book {
+    //function main to write code
+    public String title;
+    public String author;
+    // constructure with no argument
+    public Book(){
+        this.title ="no title";
+        this.author ="no author";
+    }
+    //constructure with two arguments
+    public Book(String title, String author)
+    {
+        this.title = title;
+        this.author = author;
+    }
+    // function within class
+    public void readBook()
+    {
+        System.out.println("Reading"+this.title+"by"+this.author);
+    }
+
+
+}
+// Main class is like main function (name of this class should be same as file name)
+public class Main{
+    //main function name should in small letters but same as class name
+    public static void main(String [] args)
+    {
+        // book1 is object calling constructure
+        Book book1=new Book("Harry Potter", "Jk Rowling");
+        //book1.(argument or variable)name to store or print data from
+        System.out.println(book1.title+ "the author is "+ book1.author);
+        Book book2= new Book("NextIn","Jasleen kaur");
+        System.out.println(book2.title+ "the author is "+book2.author);
+    }
+
+}
