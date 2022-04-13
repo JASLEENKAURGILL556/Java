@@ -1,0 +1,42 @@
+package com.Prepjava;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+class chef{
+    public void makeChicken(){
+        System.out.println("the chef make chicken");
+    }
+
+    public void makeSalad(){
+        System.out.println("the chef make salad");
+    }
+
+    public void makeSpecialdish(){
+        System.out.println("the chef make special dish");
+    }
+}
+
+
+class Italianchef extends chef{
+   // to overwrite the function in extended class 
+    @Override
+    public void makeSpecialdish() {
+        System.out.println("the chef make pesto pasta");
+    }
+
+
+    public void makepasta() {
+        System.out.println("the chef make pasta");
+    }
+}
+
+public class Main{
+    public static void main(String [] args){
+        chef chef1=new chef();
+        Italianchef chef2= new Italianchef();
+        chef1.makeChicken();
+        //extended class objects can call base class function like makeSalad function here
+        chef2.makeSalad();
+    }
+}
