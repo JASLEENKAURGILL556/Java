@@ -1,0 +1,39 @@
+package com.Prepjava;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+class Book{
+    public String title;
+    //private variable 
+    private String author;
+    
+    //constructure with two parameter
+    public Book(String title, String author){
+        this.title=title;
+        //indirect way to store value in private variable
+        this.setAuthor(author);
+
+    }
+    public void readbook(){
+        System.out.println("Reading"+this.title+"by"+getAuthor());
+    }
+  
+    public String getAuthor()
+    {
+        return this.author;
+    }
+    public void setAuthor(String author){
+        this.author=author;
+    }
+
+}
+
+public class Main{
+    public static void main(String [] args)
+    {
+        Book book1=new Book("Nextin","Jasleen");
+        System.out.println(book1.getAuthor());
+    }
+
+}
