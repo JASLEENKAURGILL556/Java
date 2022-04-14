@@ -1,0 +1,37 @@
+package com.Prepjava;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+//abstract class 
+abstract class Vehicle{
+    // abstract method or function to later override to
+    public abstract void move();
+    public void transport(){
+        System.out.println("this vehicle is use to travel.");
+    }
+}
+
+// drived class from abstract base class
+class Bicycle extends Vehicle{
+     @Override
+     //abstract function used here
+    public void move(){
+         System.out.println("the bicycle pedals forward");
+     }
+}
+
+class Plane extends Vehicle{
+    @Override
+    public void move(){
+        System.out.println("the plane fly in sky.");
+    }
+}
+
+public class Main{
+    public static void main(String [] args){
+        Plane plane=new Plane();
+        plane.move();
+        plane.transport();
+    }
+}
