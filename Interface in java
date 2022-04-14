@@ -1,0 +1,41 @@
+package com.Prepjava;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+// It is like abstract class with abstract method or function only (act like data type)
+interface Animal{
+    public void speak();
+}
+
+//implement keyword to inherit interface function
+class Cat implements Animal{
+   // function of interface is overrided here
+    @Override
+    public void speak(){
+        System.out.println("Meow Meow");
+    }
+}
+
+class Dog implements Animal{
+    @Override
+    public void speak(){
+        System.out.println("Bou Bou");
+    }
+}
+
+public class Main{
+    public static void main(String [] args){
+        // we have created an array to intialize interface elements 
+        // only then we can use it 
+        Animal [] animals={
+                // even though dog is object by it act like a data member of new data structure or data type
+                new Dog(),
+                new Cat()
+        };
+        // one of for loop using methods to use array elements
+        for(Animal animal:animals){
+            animal.speak();
+        }
+    }
+}
