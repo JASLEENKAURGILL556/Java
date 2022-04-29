@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+
+public class Main
+{
+	public static void main(String[] args) {
+  //array declartion
+ 
+		ArrayList<String> friend= new ArrayList<String>();
+    //adding elements 
+		friend.add("Oscar");
+		friend.add("Tiger");
+		friend.add("Jassie");
+    //to show all elements array
+		System.out.println(friend.toString());
+    //to get an specific element
+		System.out.println(friend.get(1));
+    //to check wether element is present
+		System.out.println(friend.contains("Tiger"));
+    //to check the size or length of array
+		System.out.println(friend.size());
+		
+	}
+}
