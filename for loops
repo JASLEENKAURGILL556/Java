@@ -1,0 +1,16 @@
+public class Main{
+    public static void main(String [] args)
+    {
+       
+       for(int i=0;i<2;i++)
+       {
+           System.out.println("Today is Hoilday");
+       }
+       
+       int luckyno[]={1,4,5,8,2};
+       for(int luckynum:luckyno)
+       {
+           System.out.print(luckynum+" ");
+       }
+    }
+}
